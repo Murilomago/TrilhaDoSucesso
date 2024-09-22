@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Viagens</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-dark text-light text-center py-4">
+        <nav>
+            <ul class="nav justify-content-center mb-4">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Viajar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Destinos</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>Milhares de destinos, infinitas aventuras. <br> Comece sua jornada, a um clique de distância.</h1>
+    </header>
+    <main class="container">
+        <section class="destinos">
+            <h2>Conheça Nossos Pacotes e Destinos</h2>
+            <a href="https://www.youtube.com" target="_blank" class="btn btn-danger mb-3">Ingressos</a>
+            <p>Todos os locais são propriedades privadas, com uma hospitalidade que nos remete ao aconchego de casa.</p>
+            <div class="card-container d-flex flex-wrap justify-content-center">
+                <div class="card">
+                    <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Imagem de um lampião da Chácara ao anoitecer">
+                    <div class="card-body">
+                        <h3>Chácara Smallville</h3>
+                        <p>Desfrute de um ambiente acolhedor e tranquilo, ideal para relaxar e apreciar a natureza.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.w3schools.com/w3images/nature.jpg" alt="Imagem de uma colina verdejante com árvores e neblina">
+                    <div class="card-body">
+                        <h3>Colinas do Amanhecer</h3>
+                        <p>Explore as colinas verdejantes e deixe-se envolver pela beleza da natureza ao amanhecer.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.w3schools.com/w3images/fjords.jpg" alt="Imagem de uma pequena igreja no Cerrado">
+                    <div class="card-body">
+                        <h3>São Salvador do Mato Seco</h3>
+                        <p>Visite uma pequena e charmosa igreja no coração do Cerrado e descubra a cultura local.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <table class="table table-bordered">
+                <caption>Descrição dos Serviços e Respectivos Valores</caption>
+                <thead>
+                    <tr>
+                        <th>Serviço</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>All-inclusive</td>
+                        <td>R$ 3.250,00</td>
+                    </tr>
+                    <tr>
+                        <td>Hospedagem</td>
+                        <td>R$ 1.800,00</td>
+                    </tr>
+                    <tr>
+                        <td>Pacote Tour e Alimentação</td>
+                        <td>R$ 2.000,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Planeje Sua Viagem</h2>
+            <form action="" method="get">
+                <fieldset>
+                    <legend>Dados do Cliente</legend>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Serviços Desejados</legend>
+                    <label>
+                        <input type="checkbox" name="passagem" value="Passagens"> Compra de Passagens
+                    </label>
+                    <label>
+                        <input type="checkbox" name="hospedagem" value="Hospedagens"> Reserva de Hospedagem
+                    </label>
+                    <label>
+                        <input type="checkbox" name="aluguelVeiculos" value="Aluguel de Veículos"> Aluguel de Veículos
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Forma de Pagamento</legend>
+                    <label>
+                        <input type="radio" name="formaPagamento" value="pix"> Pix
+                    </label>
+                    <label>
+                        <input type="radio" name="formaPagamento" value="boleto"> Boleto Bancário
+                    </label>
+                    <label>
+                        <input type="radio" name="formaPagamento" value="cartao"> Cartão de Crédito
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Prazo de Pagamento</legend>
+                    <label for="Nparcelas">Escolha o Número de Parcelas</label>
+                    <select name="Nparcelas" id="Nparcelas">
+                        <option value="1x">À vista</option>
+                        <option value="2x">2x Sem Juros</option>
+                        <option value="3x">3x Sem Juros</option>
+                        <option value="4x">4x Sem Juros</option>
+                        <option value="5x">5x Sem Juros</option>
+                        <option value="6x">6x Sem Juros</option>
+                        <option value="7x">7x 10% de Juros ao Mês</option>
+                        <option value="8x">8x 12% de Juros ao Mês</option>
+                        <option value="9x">9x 14% de Juros ao Mês</option>
+                        <option value="10x">10x 15% de Juros ao Mês</option>
+                    </select>
+                </fieldset>
+
+                <input type="submit" value="Enviar" class="btn btn-success">
+            </form>
+        </section>
+    </main>
+    <footer class="text-light bg-dark text-center py-3">
+        <h3>SAC/Ouvidoria: +55 0800 40028922 <br>
+        Visite nossa <a href="#" class="text-light">Central de atendimento online</a></h3>
+    </footer>
+</body>
+</html>
